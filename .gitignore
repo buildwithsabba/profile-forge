@@ -1,11 +1,7 @@
-# Cached rembg cutout (~1 MB), regenerated from your photo by prep_photo.py.
+# Derived intermediates, regenerated from your photo on every build.
 assets/source-cutout.png
+assets/source-prepped.png
 
 __pycache__/
 *.pyc
 .venv/
-
-# Your portrait and its graded intermediate stay out of the template itself;
-# the build workflow commits them into your own repo once you upload one.
-assets/photo.*
-assets/source-prepped.png
