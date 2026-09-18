@@ -1,0 +1,74 @@
+name: Build profile art
+
+# The full pipeline, including background removal. Runs when the photo or
+# the details change -- not on a schedule, because the portrait and the card
+# are static art. The heatmap has its own lighter workflow.
+"on":
+  push:
+    branches: [main]
+    paths:
+      - "profile.yml"
+      - "assets/photo.*"
+      - "scripts/**"
+      - ".github/workflows/build-profile.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-art
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: pip
+          cache-dependency-path: scripts/requirements.txt
+
+      - run: pip install -r scripts/requirements.txt
+
+      # rembg downloads a ~176 MB model on first use. Cached, the whole job
+      # runs in well under a minute instead of re-fetching it every time.
+      - name: Cache the background-removal model
+        uses: actions/cache@v4
+        with:
+          path: ~/.u2net
+          key: u2net-model-v1
+
+      - name: Check profile.yml before doing any work
+        run: python scripts/config.py
+
+      - name: Prepare the photo
+        run: python scripts/prep_photo.py
+
+      - name: Render the portrait and the card
+        run: |
+          python scripts/make_ascii_svg.py
+          python scripts/make_info_card.py
+
+      - name: Fetch contributions and render the heatmap
+        env:
+          GH_USER: ${{ github.repository_owner }}
+        run: |
+          python scripts/fetch_contributions.py
+          python scripts/render_heatmap_svg.py
+
+      - name: Solve the README display widths
+        run: python scripts/render_readme.py
+
+      - name: Verify the output
+        run: python scripts/verify.py
+
+      - uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: rebuild profile art [skip ci]"
+          file_pattern: >-
+            README.md ascii-portrait.svg info-card.svg contrib-heatmap.svg
+            data/contributions.json assets/source-prepped.png

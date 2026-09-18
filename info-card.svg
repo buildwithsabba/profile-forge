@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="412"
+     viewBox="0 0 560 412" role="img">
+  <defs>
+    <clipPath id="frame">
+      <rect x="0" y="0" width="560" height="412" rx="10" ry="10"/>
+    </clipPath>
+
+  </defs>
+  <style>
+    text { white-space: pre; }
+
+    .r {
+      opacity: 0;
+      animation: in 0.42s cubic-bezier(.2,.7,.3,1) both;
+    }
+    @keyframes in {
+      from { opacity: 0; transform: translateX(-10px); }
+      to   { opacity: 1; transform: translateX(0); }
+    }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect x="0" y="0" width="560" height="412" fill="#0d1117"/>
+  <rect x="0" y="0" width="560" height="30" fill="#161b22"/>
+  <rect x="0" y="29" width="560" height="1" fill="#21262d"/>
+  <circle cx="18" cy="15" r="5" fill="#ff5f57" opacity="0.85"/><circle cx="34" cy="15" r="5" fill="#febc2e" opacity="0.85"/><circle cx="50" cy="15" r="5" fill="#28c840" opacity="0.85"/>
+  <text x="280" y="19" text-anchor="middle"
+        font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="11" fill="#6e7681">alessio@builtwithsabba: ~/neofetch</text>
+    <g class="r" style="animation-delay:0s"><text x="18" y="56" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" font-weight="700" fill="#39d353">alessio<tspan fill="#6e7681">@</tspan><tspan fill="#6366f1">builtwithsabba</tspan></text></g>
+    <rect x="18" y="69" width="172" height="1" fill="#21262d"/>
+    <g class="r" style="animation-delay:0.09s"><text x="18" y="108" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Role</text><text x="92" y="108" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">AI Builder &amp; Founder</text></g>
+    <g class="r" style="animation-delay:0.17s"><text x="18" y="129" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Now</text><text x="92" y="129" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">FiscEdge — AI-powered company creation</text></g>
+    <g class="r" style="animation-delay:0.26s"><text x="92" y="150" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">BuiltWithSabba — build log &amp; experiments</text></g>
+    <g class="r" style="animation-delay:0.34s"><text x="18" y="171" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Prev</text><text x="92" y="171" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">Delos / The Italians · NEXUS LINK LLC (US)</text></g>
+    <g class="r" style="animation-delay:0.43s"><text x="18" y="192" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Shipped</text><text x="92" y="192" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">FiscEdge Academy · Giurimi · The Italians</text></g>
+    <g class="r" style="animation-delay:0.51s"><text x="18" y="213" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Stack</text><text x="92" y="213" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">TypeScript · Next.js · React · Tailwind</text></g>
+    <g class="r" style="animation-delay:0.60s"><text x="18" y="234" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Infra</text><text x="92" y="234" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">Supabase · Vercel · GitHub Actions · Python</text></g>
+    <g class="r" style="animation-delay:0.68s"><text x="18" y="255" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">AI</text><text x="92" y="255" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">LLM integration · agentic pipelines</text></g>
+    <g class="r" style="animation-delay:0.77s"><text x="18" y="276" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Studies</text><text x="92" y="276" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">MSc Entrepreneurship · MBA · BSc Chemistry</text></g>
+    <g class="r" style="animation-delay:0.85s"><text x="18" y="297" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Langs</text><text x="92" y="297" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">IT native · EN C1 · ES basic</text></g>
+    <g class="r" style="animation-delay:0.94s"><text x="18" y="318" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Loc</text><text x="92" y="318" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">Rome, IT — building globally</text></g>
+    <g class="r" style="animation-delay:1.02s"><text x="18" y="339" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#6366f1" font-weight="600">Web</text><text x="92" y="339" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="13" fill="#c9d1d9">builtwithsabba.com</text></g>
+    <rect class="r" style="animation-delay:1.10s" x="18" y="365" width="20" height="9" rx="2" fill="#6366f1"/>
+    <rect class="r" style="animation-delay:1.10s" x="42" y="365" width="20" height="9" rx="2" fill="#818cf8"/>
+    <rect class="r" style="animation-delay:1.10s" x="66" y="365" width="20" height="9" rx="2" fill="#a5b4fc"/>
+    <rect class="r" style="animation-delay:1.10s" x="90" y="365" width="20" height="9" rx="2" fill="#39d353"/>
+    <rect class="r" style="animation-delay:1.10s" x="114" y="365" width="20" height="9" rx="2" fill="#26a641"/>
+    <rect class="r" style="animation-delay:1.10s" x="138" y="365" width="20" height="9" rx="2" fill="#006d32"/>
+    <rect class="r" style="animation-delay:1.10s" x="162" y="365" width="20" height="9" rx="2" fill="#febc2e"/>
+    <rect class="r" style="animation-delay:1.10s" x="186" y="365" width="20" height="9" rx="2" fill="#ff5f57"/>
+    <text class="r" style="animation-delay:1.19s" x="18" y="397" font-family="ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'DejaVu Sans Mono','Liberation Mono',monospace" font-size="11.5" fill="#6e7681" font-style="italic">Build with AI. Think like a founder.</text>
+  </g>
+  <rect x="0.5" y="0.5" width="559" height="411" rx="10"
+        ry="10" fill="none" stroke="#21262d"/>
+</svg>

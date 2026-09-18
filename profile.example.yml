@@ -1,0 +1,44 @@
+# ══════════════════════════════════════════════════════════════════════
+#  This is the only file you need to edit.
+#  Change it, commit, and your profile art rebuilds itself.
+# ══════════════════════════════════════════════════════════════════════
+
+# Shown as user@host at the top of the card, like a shell prompt.
+user: alessio
+host: builtwithsabba
+
+# The rows of the info card. Add, remove and reorder them freely —
+# there is nothing magic about these labels.
+#
+# One row per line, written as   - Label: value
+# A row whose label is ""  continues the row above it.
+# If a value contains a colon, wrap it in quotes.
+card:
+  - Role: AI Builder & Founder
+  - Now: FiscEdge — AI-powered company creation
+  - "": BuiltWithSabba — build log & experiments
+  - Prev: Delos / The Italians · NEXUS LINK LLC (US)
+  - Shipped: FiscEdge Academy · Giurimi · The Italians
+  - Stack: TypeScript · Next.js · React · Tailwind
+  - Infra: Supabase · Vercel · GitHub Actions · Python
+  - AI: LLM integration · agentic pipelines
+  - Studies: MSc Entrepreneurship · MBA · BSc Chemistry
+  - Langs: IT native · EN C1 · ES basic
+  - Loc: Rome, IT — building globally
+  - Web: builtwithsabba.com
+
+# One line at the foot of the card. Leave empty to omit it.
+motto: Build with AI. Think like a founder.
+
+# ─── optional, delete any line to use the default ────────────────────
+
+# Your portrait. Omit this and any assets/photo.* is picked up
+# (jpg, png, heic, heif, webp — straight from your phone is fine).
+photo: assets/photo.jpg
+
+# Accent colour: card labels, and the cursor that types the portrait.
+accent: "#6366f1"
+
+# How many characters wide the ASCII portrait is sampled.
+# Higher = finer detail and a bigger file. 80-120 is the useful range.
+ascii_columns: 100

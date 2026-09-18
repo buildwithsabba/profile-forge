@@ -1,0 +1,35 @@
+# ══════════════════════════════════════════════════════════════════════
+#  This is the only file you need to edit.
+#  Replace the placeholders, commit, and your art builds itself.
+#  A filled-in real example lives in profile.example.yml
+# ══════════════════════════════════════════════════════════════════════
+
+# Shown as user@host at the top of the card, like a shell prompt.
+user: yourname
+host: yourhandle
+
+# The rows of the info card. Add, remove and reorder them freely —
+# there is nothing magic about these labels.
+#
+# One row per line, written as   - Label: value
+# A row whose label is ""  continues the row above it.
+# If a value contains a colon, wrap the whole value in quotes.
+card:
+  - Role: what you do
+  - Now: what you are building right now
+  - "": a second line, if one thing needs two
+  - Stack: the tools you actually reach for
+  - Loc: where you are
+  - Web: your site
+
+# One line at the foot of the card. Leave empty to omit it.
+motto: ""
+
+# ─── optional, delete any line to use the default ────────────────────
+
+# Accent colour: card labels, and the cursor that types the portrait.
+accent: "#6366f1"
+
+# How many characters wide the ASCII portrait is sampled.
+# Higher = finer detail and a bigger file. 80-120 is the useful range.
+ascii_columns: 100

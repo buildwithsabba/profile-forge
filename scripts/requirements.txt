@@ -1,0 +1,12 @@
+# Daily heatmap refresh needs only these two.
+requests==2.32.3
+beautifulsoup4==4.12.3
+PyYAML==6.0.2
+
+# The portrait pipeline. Heavier (onnxruntime plus a ~176 MB model on first
+# run), and only needed when the photo changes — the daily workflow skips it.
+pillow==11.0.0
+numpy==2.0.2
+opencv-python-headless==4.10.0.84
+rembg==2.0.59
+pillow-heif==0.18.0
